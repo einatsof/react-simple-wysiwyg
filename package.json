@@ -12,7 +12,7 @@
     "pages": "gh-pages -d examples/github.io",
     "lint": "tsc --noEmit && eslint src examples",
     "postversion": "git push && git push --tags",
-    "prepare": "npm install --prefix examples/typescript",
+    "prepare": "npm install --prefix examples/typescript && npm run prepack",
     "prepack": "npm run build && npm run test",
     "test": "npm run lint && spech"
   },
