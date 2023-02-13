@@ -18,7 +18,7 @@
   },
   "repository": "megahertz/react-simple-wysiwyg",
   "files": [
-    "lib"
+    "*"
   ],
   "keywords": [
     "react",
