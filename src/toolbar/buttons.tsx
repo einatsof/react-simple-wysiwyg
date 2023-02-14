@@ -25,7 +25,11 @@ export const BtnLink = createButton('Link', '🔗', ({ $selection }) => {
     document.execCommand('unlink');
   } else {
     // eslint-disable-next-line no-alert
-    document.execCommand('createLink', false, prompt('URL', ''));
+    let linkURL = prompt('URL', '');
+    document.execCommand('createLink', false, 'myLink');
+    let a = document.querySelector('a[href="myLink"]');
+    a.setAttribute('target', '_blank');
+    a.setAttribute('href', linkURL);
   }
 });
 
