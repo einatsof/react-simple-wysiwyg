@@ -3,12 +3,12 @@ import type { ChangeEvent, HTMLAttributes } from 'react';
 import { EditorState, useEditorState } from '../editor/EditorContext';
 
 export const BtnStyles = createDropdown('Styles', [
-  ['Normal', 'formatBlock', 'DIV'],
+  ['Normal', 'formatBlock', 'P'],
   // ['𝗛𝗲𝗮𝗱𝗲𝗿 𝟭', 'formatBlock', 'H1'],
   // ['Header 2', 'formatBlock', 'H2'],
-  ['Heading', 'formatBlock', 'H2'],
+  ['𝗛𝗲𝗮𝗱𝗶𝗻𝗴', 'formatBlock', 'H2'],
   ['Subheading', 'formatBlock', 'H4'],
-  ['𝙲𝚘𝚍𝚎', 'formatBlock', 'PRE'],
+  // ['𝙲𝚘𝚍𝚎', 'formatBlock', 'PRE'],
 ]);
 
 function createDropdown(title: string, items: DropDownItem[]): typeof Dropdown {

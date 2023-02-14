@@ -1,5 +1,5 @@
 .rsw-editor {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
@@ -59,6 +59,7 @@
 .rsw-toolbar {
   align-items: center;
   background-color: #f5f5f5;
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
+  border-radius: 10px;
   display: flex;
 }
